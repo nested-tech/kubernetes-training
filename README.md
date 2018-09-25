@@ -1,7 +1,7 @@
 # kubernetes-training
 A small subset of the infrastructures code for learning how to manage containers.
 
-### Getting started with Docker
+### Starting with Docker
 
 First we will build and run a docker image.
 
@@ -14,7 +14,7 @@ Once you have verified it has worked you can stop the image with
 1. `docker ps`
 2. `docker stop <our container id>`
 
-### Using Kubernetes and Minikube
+### Installing Kubernetes and Minikube
 
 We will now build and interact with our cluster using the `kubectl` CLI client and `Minikube`.
 
@@ -26,7 +26,11 @@ Install our Minikube client
 
     brew cask install minikube
 
+### Building and deploying your cluster 
 
+    minikube start
+
+This command creates and configures a virtual machine that runs a single-node Kubernetes cluster. It also configures your kubectl installation to communicate with this cluster under the context `minikube`.
 
 ## Terminology
 
@@ -42,4 +46,4 @@ A physical or virtual machine running Kubernetes, onto which pods can be schedul
 A service defines a set of pods and a means by which to access them, such as single stable IP address and corresponding DNS name.
 
 ### Minikube
-A tool that makes it easy to run Kubernetes locally. It runs a single-node Kubernetes cluster inside a VM on your laptop. Supports the majority of Kubernetes features.
+A tool that makes it easy to run Kubernetes locally. It runs a single-node Kubernetes cluster inside a VM on your laptop. Supports the majority of Kubernetes features. For more help see the guide [here](https://kubernetes.io/docs/setup/minikube/)
