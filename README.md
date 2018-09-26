@@ -1,5 +1,5 @@
 # kubernetes-training
-A small subset of the infrastructures code for learning how to manage containers.
+A small subset of the infrastructures functionality for learning how to manage containers.
 
 ## Starting with Docker
 
@@ -84,6 +84,22 @@ Update the image of the Deployment
 Then run the `service` command again.
 
     minikube service our-http-app
+
+## Turning it off
+
+To clean up our cluster.
+
+    kubectl delete service our-http-app
+    kubectl delete deployment our-http-app
+
+To remove the docker images
+
+    docker rmi our-http-app our-http-appe:v2 -f
+
+To stop the Minikube VM
+
+    minikube stop
+    eval $(minikube docker-env -u)
 
 ## Terminology
 
