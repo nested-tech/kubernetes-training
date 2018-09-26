@@ -7,6 +7,6 @@ A small subset of the infrastructures functionality for learning how to manage c
 
 [Building and deploying your cluster](build-and-deploy.md)
 
-[Turning it off](turning-it-off)
+[Turning it off](turning-it-off.md)
 
 [Terminology](terminology.md)

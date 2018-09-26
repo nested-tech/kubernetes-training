@@ -40,4 +40,4 @@ Minikube requires we make `LoadBalancer` types available via the `service` comma
 
     minikube service our-http-app
 
-This will expose it and open the bwoser window onto the local IP that serves your application.
+This will expose it and open the browser window onto the local IP that serves your application.
