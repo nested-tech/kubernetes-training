@@ -3,7 +3,7 @@
 Some of the basics to get you started.
 
 ### Cluster
-Automates the distribution and scheduling of application containers. Consists of
+Automates the distribution and scheduling of application containers. Consists of:
 - Master
 - Nodes -> Pods -> Containers
 
